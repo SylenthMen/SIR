@@ -1,0 +1,154 @@
+---
+import UpcomiCard from "../components/UpcomiCard.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Upcoming Releases</title>
+    <style>
+      * {
+        font-family: "Kdam Thmor Pro", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <Navbar />
+    <h2 class="text-[#ff9f33] text-center py-4 text-2xl">
+      TRACKS EN LANZAMIENTO
+    </h2>
+    <!--PRIMER CARD -->
+    <UpcomiCard
+      State="EN REVISION"
+      Titulo="Smash Heart"
+      DescripcionUno="Track estilo Big Room."
+      DescripcionDos="Dinamico con ritmos explosivos acordes agresivos y bajos potentesn proto disponible en todas las tiendas de streaming."
+    >
+      <img
+        slot="COVER-ART"
+        src="/smash_heart.webp"
+        alt="Cover art fo track release"
+        class="w-full h-full object-cover"
+        style="aspect-ratio: 1/1; object-fit: cover"
+      />
+      <span
+        slot="ProfilePhoto"
+        class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full"
+        ><span
+          class="flex h-full w-full items-center justify-center rounded-full bg-muted"
+          ><img src="/sylenthmen.jpg" alt="sylenthmen imagen de perfil" /></span
+        ></span
+      >
+      <a
+        slot="LinkArtist"
+        class="text-[#ff9f33] hover:underline"
+        href="#"
+        rel="ugc">sylenthmen</a
+      >
+      <!--BOTON VER VIDEO -->
+      <a
+        slot="btn-Adelanto"
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.tiktok.com/@skullislandrecords/video/7310444967816711430?is_from_webapp=1&sender_device=pc&web_id=7285412557015139846"
+        ><button
+          class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2
+          bg-[#ff9f33] hover:bg-orange-800 text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-4 h-4 pr-1"
+            ><polygon points="5 3 19 12 5 21 5 3"></polygon></svg
+          >
+          <p>VER ADELANTO</p>
+        </button></a
+      >
+      <!-- FIN BOTON VER VIDEO -->
+
+      <button
+        slot="EstadoT"
+        class="p-1 inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-yellow-900/35 hover:bg-yellow-600/55 text-yellow-600"
+        >EN REVISIÓN</button
+      >
+    </UpcomiCard>
+    <!--FIN DE PRIMER CARD -->
+
+    <UpcomiCard
+      State="Pendiente Por Subir"
+      Titulo="ID"
+      DescripcionUno="Track estilo house."
+      DescripcionDos="Con ritmo tranquilo, pegajoso y meliodico."
+    >
+      <img
+        slot="COVER-ART"
+        src="/LUSTEX_ID.webp"
+        alt="Cover art fo track release"
+        class="w-full h-full object-cover"
+        style="aspect-ratio: 1/1; object-fit: cover"
+      />
+
+      <span
+        slot="ProfilePhoto"
+        class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full"
+        ><span
+          class="flex h-full w-full items-center justify-center rounded-full bg-muted"
+          ><img src="/lustex.jpg" alt="sylenthmen imagen de perfil" /></span
+        ></span
+      >
+      <a
+        slot="LinkArtist"
+        class="text-[#ff9f33] hover:underline"
+        href="#"
+        rel="ugc">Lustex</a
+      >
+      <!--BOTON VER VIDEO -->
+      <a
+        slot="btn-Adelanto"
+        href="https://www.tiktok.com/@skullislandrecords/video/7311541829323721989?is_from_webapp=1&sender_device=pc&web_id=7285412557015139846"
+        ><button
+          class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2
+          bg-[#ff9f33] hover:bg-orange-800 text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-4 h-4 pr-1"
+            ><polygon points="5 3 19 12 5 21 5 3"></polygon></svg
+          >
+          <p>VER ADELANTO</p>
+        </button></a
+      >
+      <!-- FIN BOTON VER VIDEO -->
+
+      <button
+        slot="EstadoT"
+        class="p-1 inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-red-900/35 hover:bg-red-900 text-red-600"
+        >PENDIENTE POR SUBIR</button
+      >
+    </UpcomiCard>
+  </body>
+</html>
