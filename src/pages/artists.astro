@@ -1,5 +1,6 @@
 ---
 import CardArtist from "../components/CardArtist.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <!doctype html>
@@ -9,7 +10,16 @@ import CardArtist from "../components/CardArtist.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artists | Skull Island Records</title>
   </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+    * {
+      font-family: "Kdam Thmor Pro", sans-serif;
+    }
+  </style>
   <body class="bg-black">
+    <Navbar />
+    <h1 class="text-[#ff9f33] text-center text-3xl">ARTISTS SECTION</h1>
     <div class="flex justify-center items-center mt-12">
       <CardArtist />
     </div>
