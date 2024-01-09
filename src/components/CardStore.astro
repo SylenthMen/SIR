@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu Título</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+      * {
+        font-family: "Kdam Thmor Pro", sans-serif;
+      }
+
+      .tarjetitas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .card {
+        width: 300px;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        gap: 10px;
+        padding: 0px 15px;
+        background: linear-gradient(0deg, #000, #272727, #000, #272727);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        position: relative;
+        transition-duration: 0.2s;
+      }
+
+      .card:before,
+      .card:after {
+        content: "";
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        border-radius: 10px;
+        background: linear-gradient(
+          45deg,
+          #fb0094,
+          #0000ff,
+          #00ff00,
+          #ffff00,
+          #ff0000,
+          #fb0094,
+          #0000ff,
+          #00ff00,
+          #ffff00,
+          #ff0000
+        );
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: steam 20s linear infinite;
+      }
+
+      @keyframes steam {
+        0% {
+          background-position: 0 0;
+        }
+
+        50% {
+          background-position: 400% 0;
+        }
+
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      .card:after {
+        filter: blur(100px);
+      }
+
+      .botoncito {
+        display: block;
+      }
+
+      .fancy {
+        background-color: transparent;
+        border: 2px solid #ff9f33;
+        border-radius: 0;
+        box-sizing: border-box;
+        color: #ff9f33;
+        cursor: pointer;
+        display: block;
+        float: right;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        margin: 0;
+        outline: none;
+        overflow: visible;
+        padding: 1.25em 2em;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        text-transform: none;
+        transition: all 0.3s ease-in-out;
+        user-select: none;
+        font-size: 1rem;
+      }
+
+      .fancy::before {
+        content: " ";
+        width: 1.5625rem;
+        height: 2px;
+        background: #ff9f33;
+        top: 50%;
+        left: 1.5em;
+        position: absolute;
+        transform: translateY(-50%);
+        transform-origin: center;
+        transition:
+          background 0.3s linear,
+          width 0.3s linear;
+      }
+
+      .fancy .text {
+        font-size: 1.125em;
+        line-height: 1.33333em;
+        padding-left: 2em;
+        display: block;
+        text-align: left;
+        transition: all 0.3s ease-in-out;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ff9f33;
+      }
+
+      .fancy .top-key,
+      .fancy .bottom-key-1,
+      .fancy .bottom-key-2 {
+        height: 2px;
+        background: #e8e8e8;
+        position: absolute;
+        transition: width 0.5s ease-out;
+      }
+
+      .fancy .top-key {
+        width: 1.5625rem;
+        top: -2px;
+        left: 0.625rem;
+      }
+
+      .fancy .bottom-key-1 {
+        width: 1.5625rem;
+        right: 1.875rem;
+        bottom: -2px;
+      }
+
+      .fancy .bottom-key-2 {
+        width: 0.625rem;
+        right: 0.625rem;
+        bottom: -2px;
+      }
+
+      .fancy:hover {
+        color: #ff9f33;
+        background: #ff9f3325;
+      }
+
+      .fancy:hover::before {
+        width: 0.9375rem;
+        background: white;
+      }
+
+      .fancy:hover .text {
+        color: #ff9f33;
+        padding-left: 1.5em;
+      }
+
+      .fancy:hover .top-key {
+        left: -2px;
+        width: 0px;
+      }
+
+      .fancy:hover .bottom-key-1,
+      .fancy:hover .bottom-key-2 {
+        right: 0;
+        width: 0;
+      }
+
+      /* Añadir media query para hacer el diseño responsive */
+      @media screen and (max-width: 768px) {
+        body {
+          justify-content: center;
+        }
+
+        .card {
+          margin: 20px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tarjeta 1 -->
+    <div class="tarjetitas">
+      <article class="card">
+        <div>
+          <img src="/galaxyx.webp" alt="Galaxy x cover art" />
+        </div>
+        <div class="botoncito">
+          <a class="fancy" href="#">
+            <span class="top-key"></span>
+            <span class="text">Buy Track</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+          </a>
+        </div>
+      </article>
+    </div>
+    <!-- Tarjeta 2 -->
+    <div class="tarjetitas">
+      <article class="card">
+        <div>
+          <img src="/psynow.webp" alt="psynow cover art" />
+        </div>
+        <div class="botoncito">
+          <a class="fancy" href="#">
+            <span class="top-key"></span>
+            <span class="text">Buy Track</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="tarjetitas">
+      <article class="card">
+        <div>
+          <img src="/sylenthmen_1910.jpg" alt="1910 cover art" />
+        </div>
+        <div class="botoncito">
+          <a class="fancy" href="#">
+            <span class="top-key"></span>
+            <span class="text">Buy Track</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Puedes agregar más tarjetas según sea necesario -->
+  </body>
+</html>
