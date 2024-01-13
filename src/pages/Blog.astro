@@ -1,0 +1,49 @@
+---
+import BlogL from "../components/BlogL.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Skull Island Records</title>
+    <style>
+      p {
+        color: #ff9f33;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 2rem;
+        margin: 0 auto;
+        border-right: 0.15em solid #ff9f33;
+        animation:
+          typing 5s steps(18) 1s 1 normal both,
+          blink 1s steps(1) infinite;
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 12%;
+        }
+      }
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <Navbar />
+    <div class="flex justify-center">
+      <p>Creating...</p>
+    </div>
+    <BlogL />
+    <Footer />
+  </body>
+</html>

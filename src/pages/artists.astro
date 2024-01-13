@@ -1,6 +1,7 @@
 ---
 import CardArtist from "../components/CardArtist.astro";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -18,10 +19,13 @@ import Navbar from "../components/Navbar.astro";
     }
   </style>
   <body class="bg-black">
-    <Navbar />
+    <div class="z-10">
+      <Navbar />
+    </div>
     <h1 class="text-[#ff9f33] text-center text-3xl">ARTISTS SECTION</h1>
-    <div class="flex justify-center items-center mt-12">
+    <div class="flex justify-center items-center lg:-mt-24 h-[100vh]">
       <CardArtist />
     </div>
+    <Footer />
   </body>
 </html>
