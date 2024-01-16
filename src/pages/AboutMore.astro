@@ -1,3 +1,7 @@
+---
+import { ViewTransitions } from "astro:transitions";
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,45 +14,47 @@
       rel="stylesheet"
     />
     <title>About | Skull Island Records</title>
-  </head>
-  <style>
-    * {
-      font-family: "Kdam Thmor Pro", sans-serif;
-    }
+    <ViewTransitions />
+    <style>
+      * {
+        font-family: "Kdam Thmor Pro", sans-serif;
+      }
 
-    body {
-      background-color: #000;
-    }
+      body {
+        background-color: #000;
+      }
 
-    .Titulo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      max-width: 550px;
-      margin: auto;
-    }
+      .Titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 550px;
+        margin: auto;
+      }
 
-    h1 {
-      text-align: center;
-      color: #ff9f33;
-      font-size: 2rem;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
+      h1 {
+        text-align: center;
+        color: #ff9f33;
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
 
-    .Parrafos {
-      display: block;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      max-width: 550px;
-    }
+      .Parrafos {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        max-width: 550px;
+      }
 
-    p {
-      color: #fff;
-      margin-bottom: 20px;
-    }
-  </style>
+      p {
+        color: #fff;
+        margin-bottom: 20px;
+      }
+    </style></head
+  >
+
   <body>
     <div class="Titulo">
       <h1>Historia</h1>

@@ -2,6 +2,7 @@
 import CardStore from "../components/CardStore.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -10,6 +11,7 @@ import Footer from "../components/Footer.astro";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store | Skull Island Records</title>
+    <ViewTransitions />
   </head>
   <body class="bg-black">
     <Navbar />
