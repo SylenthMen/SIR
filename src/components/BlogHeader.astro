@@ -1,0 +1,72 @@
+---
+let { heroDesc } = Astro.props;
+---
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap") * {
+    font-family: "Kdam Thmor Pro", sans-serif;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #000;
+    color: #fff;
+  }
+
+  h1 {
+    color: #ff9f33;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+    max-width: 550px;
+  }
+
+  .banner img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    max-width: 550px;
+    height: 350px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .txtban {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 550px;
+  }
+
+  .txtban p {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+</style>
+<h1 class="text-white">SIR NEWS</h1>
+<div class="container">
+  <div class="banner">
+    <img
+      src="/wallblog.webp"
+      alt="imagen principal de la seccion blog un craneo dorado en un fondo azul metalico"
+    />
+  </div>
+</div>
+
+<div class="txtban">
+  <p>
+    {heroDesc}
+  </p>
+</div>
