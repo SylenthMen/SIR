@@ -1,0 +1,128 @@
+---
+import LayoutB from "../../layouts/LayoutB.astro";
+import ViewTransitions from "astro/components/ViewTransitions.astro";
+---
+
+<ViewTransitions />
+<style>
+  .tituloprin {
+    text-align: center;
+    color: #ff9f33;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .tituloprin::selection {
+    background-color: #ff9f3355;
+    color: #ff9f33;
+  }
+  .par1 {
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    margin: auto;
+    color: #fff;
+  }
+
+  .par1 p {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .par1 p::selection {
+    background-color: #ff9f3355;
+    color: #ff9f33;
+  }
+
+  span {
+    color: #ff9f33;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  span::selection {
+    background-color: #ff9f3355;
+    color: #ff9f33;
+  }
+
+  li {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  li::selection {
+    background-color: #ff9f3355;
+    color: #ff9f33;
+  }
+</style>
+
+<LayoutB title="Filosofia Skull Island Records">
+  <div>
+    <h1 class="tituloprin">Fiolosofia Skull island Records</h1>
+  </div>
+
+  <div class="par1">
+    <p>
+      En Skull Island Records, no solo distribuimos música electrónica; creamos
+      un espacio donde la pasión y la innovación se fusionan para formar una
+      experiencia única. Somos más que un sello discográfico; somos una
+      comunidad vibrante y creativa que busca elevar la escena musical
+      electrónica.
+    </p>
+    <p>
+      <span> Nuestra Misión:</span>
+      <li>
+        Fomentar la Creatividad: Nos esforzamos por ser un refugio para mentes
+        creativas, donde los productores encuentran la libertad para explorar
+        nuevas fronteras y llevar la música electrónica a lugares inexplorados.
+      </li>
+      <li>
+        Construir Relaciones Sólidas: Valoramos las relaciones sólidas y a largo
+        plazo con nuestros artistas y el público. Trabajamos juntos para
+        construir un futuro en el que la música electrónica sea una fuerza
+        unificadora que conecte a las personas.
+      </li>
+      <li>
+        Innovar Constantemente: Buscamos la innovación constante. Desde el
+        sonido hasta la forma en que interactuamos con nuestra audiencia, nos
+        esforzamos por estar a la vanguardia de la evolución musical y
+        tecnológica.
+      </li>
+      <span> Nuestros Principios:</span>
+      <li>
+        Fomentar la Creatividad: Nos esforzamos por ser un refugio para mentes
+        creativas, donde los productores encuentran la libertad para explorar
+        nuevas fronteras y llevar la música electrónica a lugares inexplorados.
+      </li>
+      <li>
+        Construir Relaciones Sólidas: Valoramos las relaciones sólidas y a largo
+        plazo con nuestros artistas y el público. Trabajamos juntos para
+        construir un futuro en el que la música electrónica sea una fuerza
+        unificadora que conecte a las personas.
+      </li>
+      <li>
+        Innovar Constantemente: Buscamos la innovación constante. Desde el
+        sonido hasta la forma en que interactuamos con nuestra audiencia, nos
+        esforzamos por estar a la vanguardia de la evolución musical y
+        tecnológica.
+      </li>
+      <span> Nuestra Visión:</span>
+      <p>
+        Skull Island Records aspira a ser reconocido como un catalizador para la
+        evolución de la música electrónica. Buscamos trascender las barreras,
+        inspirar a las generaciones futuras y dejar una marca perdurable en el
+        paisaje musical.
+      </p>
+      <p>
+        Únete a nosotros en este viaje emocionante. Skull Island Records: donde
+        la música electrónica cobra vida y las posibilidades son infinitas
+      </p>
+    </p>
+  </div>
+</LayoutB>
