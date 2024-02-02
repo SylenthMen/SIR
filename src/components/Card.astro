@@ -1,5 +1,9 @@
+---
+import { Tracks } from "../data/dataCi.json";
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,12 +22,13 @@
         margin: 0;
       }
 
-      .Container {
+      .contento {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin: auto;
+        padding: 15px;
       }
 
       .Card {
@@ -33,6 +38,7 @@
         border-radius: 5px;
         margin: 0 20px 20px 20px;
         box-sizing: border-box;
+        padding: 0 20px 0 0;
       }
 
       .img-profile img {
@@ -108,248 +114,68 @@
         .Card {
           width: calc(100% - 40px);
           margin: 0 20px 20px 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
+        /*.img-cover {
+          display: flex;
+          flex-direction: column;
+          padding: 25px;
+        }*/
       }
     </style>
   </head>
   <body>
-    <div class="Container">
-      <!--inicio card Smash Heart -->
-      <div class="Card">
-        <div class="img-profile">
-          <!--transition:name="img-art" -->
-          <img src="/sylenthmen.jpg" alt="fotito perfil" />
-        </div>
-        <div class="textos-art">
-          <a href="/artists"><p class="txt-artist">sylenthmen</p></a>
-          <p class="txt-album">Smash Heart</p>
-        </div>
+    <div class="contento">
+      {
+        Tracks.map(
+          ({ artProfile, trackNAme, nameArt, imgArt, gen, fecha, lnk }) => {
+            return (
+              <div class="Container" id="Container">
+                <div class="Card">
+                  <div class="img-profile">
+                    <img id="artProfile" src={artProfile} alt="fotito perfil" />
+                  </div>
+                  <div class="textos-art">
+                    <a href="/artists">
+                      <p class="txt-artist" id="nameArt">
+                        {nameArt}
+                      </p>
+                    </a>
+                    <p class="txt-album" id="trackNAme">
+                      {trackNAme}
+                    </p>
+                  </div>
 
-        <div class="img-cover">
-          <div class="img-1">
-            <img src="/smash_heart.webp" alt="covercito" />
-          </div>
+                  <div class="img-cover">
+                    <div class="img-1">
+                      <img src={imgArt} alt="covercito" />
+                    </div>
 
-          <div class="img-2">
-            <a href="/smartlinks/Sir008/"
-              ><img src="/link.svg" alt="vector del link" /></a
-            >
-            <p>ESCUCHAR EN</p>
-          </div>
-        </div>
+                    <div class="img-2">
+                      <a id="lnk" href={lnk}>
+                        <img src="/link.svg" alt="vector del link" />
+                      </a>
+                      <p>ESCUCHAR EN</p>
+                    </div>
+                  </div>
 
-        <div class="data-releas">
-          <p class="txt-gene">Big Room / Dance</p>
-          <p class="txt-relea">04-01-2024</p>
-        </div>
-      </div>
-      <!--fin card Smash Heart -->
-      <!--inicio card Galaxy x -->
-      <div class="Card">
-        <div class="img-profile">
-          <img src="/sylenthmen.jpg" alt="fotito perfil" />
-        </div>
-        <div class="textos-art">
-          <a href="/artists"><p class="txt-artist">sylenthmen</p></a>
-          <p class="txt-album">Galaxy X</p>
-        </div>
-
-        <div class="img-cover">
-          <div class="img-1">
-            <img src="/galaxyx.webp" alt="covercito" />
-          </div>
-
-          <div class="img-2">
-            <a href="/smartlinks/Sir007/"
-              ><img src="/link.svg" alt="vector del link" /></a
-            >
-            <p>ESCUCHAR EN</p>
-          </div>
-        </div>
-
-        <div class="data-releas">
-          <p class="txt-gene">terror bounce</p>
-          <p class="txt-relea">04-01-2024</p>
-        </div>
-      </div>
-      <!--fin card galaxy x -->
-      <!--inicio card uno -->
-      <div class="Card">
-        <div class="img-profile">
-          <img src="/sylenthmen.jpg" alt="fotito perfil" />
-        </div>
-        <div class="textos-art">
-          <a href="/artists"><p class="txt-artist">sylenthmen</p></a>
-          <p class="txt-album">Psynow</p>
-        </div>
-
-        <div class="img-cover">
-          <div class="img-1">
-            <img src="/psynow.webp" alt="covercito" />
-          </div>
-
-          <div class="img-2">
-            <a href="/smartlinks/Sir006/"
-              ><img src="/link.svg" alt="vector del link" /></a
-            >
-            <p>ESCUCHAR EN</p>
-          </div>
-        </div>
-
-        <div class="data-releas">
-          <p class="txt-gene">psytrance</p>
-          <p class="txt-relea">22-12-2023</p>
-        </div>
-      </div>
-      <!--fin card uno -->
-      <!--inicio card dos -->
-
-      <div class="Card">
-        <div class="img-profile">
-          <img src="/sylenthmen.jpg" alt="fotito perfil" />
-        </div>
-        <div class="textos-art">
-          <a href="/artists"><p class="txt-artist">sylenthmen</p></a>
-          <p class="txt-album">house..?</p>
-        </div>
-
-        <div class="img-cover">
-          <div class="img-1">
-            <img src="/sylenthmen_house.webp" alt="covercito" />
-          </div>
-
-          <div class="img-2">
-            <a href="/smartlinks/Sir005/"
-              ><img src="/link.svg" alt="vector del link" /></a
-            >
-            <p>ESCUCHAR EN</p>
-          </div>
-        </div>
-
-        <div class="data-releas">
-          <p class="txt-gene">House</p>
-          <p class="txt-relea">17-12-2021</p>
-        </div>
-      </div>
-      <!--fin card dos -->
-
-      <!--inicio card tres -->
-      <div class="Card">
-        <div class="img-profile">
-          <img src="/sylenthmen.jpg" alt="fotito perfil" />
-        </div>
-        <div class="textos-art">
-          <a href="/artists"><p class="txt-artist">sylenthmen</p></a>
-          <p class="txt-album">Lack Of Love</p>
-        </div>
-
-        <div class="img-cover">
-          <div class="img-1">
-            <img src="/sylenthmen_lackoflove.jpg" alt="covercito" />
-          </div>
-
-          <div class="img-2">
-            <a href="/smartlinks/Sir004/"
-              ><img src="/link.svg" alt="vector del link" /></a
-            >
-            <p>ESCUCHAR EN</p>
-          </div>
-        </div>
-
-        <div class="data-releas">
-          <p class="txt-gene">Big Room</p>
-          <p class="txt-relea">15-10-2021</p>
-        </div>
-      </div>
-      <!--fin card tres -->
-
-      <!--inicio card cuatro -->
-      <div class="Card">
-        <div class="img-profile">
-          <img src="/sylenthmen.jpg" alt="fotito perfil" />
-        </div>
-        <div class="textos-art">
-          <a href="/artists"><p class="txt-artist">sylenthmen</p></a>
-          <p class="txt-album">19 - 10</p>
-        </div>
-
-        <div class="img-cover">
-          <div class="img-1">
-            <img src="/sylenthmen_1910.jpg" alt="covercito" />
-          </div>
-
-          <div class="img-2">
-            <a href="/smartlinks/Sir003/"
-              ><img src="/link.svg" alt="vector del link" /></a
-            >
-            <p>ESCUCHAR EN</p>
-          </div>
-        </div>
-
-        <div class="data-releas">
-          <p class="txt-gene">Big Room</p>
-          <p class="txt-relea">13-09-2021</p>
-        </div>
-      </div>
-      <!--fin card cuatro -->
-      <!--inicio card cinco -->
-      <div class="Card">
-        <div class="img-profile">
-          <img src="/sylenthmen.jpg" alt="fotito perfil" />
-        </div>
-        <div class="textos-art">
-          <a href="/artists"><p class="txt-artist">sylenthmen</p></a>
-          <p class="txt-album">Empty Heart</p>
-        </div>
-
-        <div class="img-cover">
-          <div class="img-1">
-            <img src="/sylenthmen_emptyheart.jpg" alt="covercito" />
-          </div>
-
-          <div class="img-2">
-            <a href="/smartlinks/Sir002/"
-              ><img src="/link.svg" alt="vector del link" /></a
-            >
-            <p>ESCUCHAR EN</p>
-          </div>
-        </div>
-
-        <div class="data-releas">
-          <p class="txt-gene">Big Room</p>
-          <p class="txt-relea">17-07-2021</p>
-        </div>
-      </div>
-      <!--fin card cinco -->
-      <!-- inicio card seis -->
-      <div class="Card">
-        <div class="img-profile">
-          <img src="/sylenthmen.jpg" alt="fotito perfil" />
-        </div>
-        <div class="textos-art">
-          <a href="/artists"><p class="txt-artist">sylenthmen</p></a>
-          <p class="txt-album">Speed House</p>
-        </div>
-
-        <div class="img-cover">
-          <div class="img-1">
-            <img src="/sylenthmen_speedhouse.jpg" alt="covercito" />
-          </div>
-
-          <div class="img-2">
-            <a href="/smartlinks/Sir001"
-              ><img src="/link.svg" alt="vector del link" /></a
-            >
-            <p>ESCUCHAR EN</p>
-          </div>
-        </div>
-
-        <div class="data-releas">
-          <p class="txt-gene">House</p>
-          <p class="txt-relea">24-08-2017</p>
-        </div>
-      </div>
-      <!--fin card seis -->
+                  <div class="data-releas">
+                    <p id="gen" class="txt-gene">
+                      {gen}
+                    </p>
+                    <p id="fecha" class="txt-relea">
+                      {fecha}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          }
+        )
+      }
     </div>
   </body>
 </html>

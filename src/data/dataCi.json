@@ -1,0 +1,76 @@
+{
+    "Tracks": [
+        {
+        "artProfile": "/sylenthmen.jpg",
+        "trackNAme": "Smash Heart",
+        "nameArt": "sylenthmen",
+        "imgArt": "/smash_heart.webp",
+        "gen": "Big Room / Dance",
+        "fecha": "23-01-2024",
+        "lnk": "/smartlinks/Sir008/"
+    },
+    {
+        "artProfile": "/sylenthmen.jpg",
+        "trackNAme": "Galaxy X",
+        "nameArt": "sylenthmen",
+        "imgArt": "/galaxyx.webp",
+        "gen": "Terror Bounce",
+        "fecha": "04-01-2024",
+        "lnk": "/smartlinks/Sir007/"
+    },
+    {
+        "artProfile": "/sylenthmen.jpg",
+        "trackNAme": "Psynow",
+        "nameArt": "sylenthmen",
+        "imgArt": "/psynow.webp",
+        "gen": "Psytrance",
+        "fecha": "22-12-2023",
+        "lnk": "/smartlinks/Sir006/"
+    },
+    {
+        "artProfile": "/sylenthmen.jpg",
+        "trackNAme": "House..?",
+        "nameArt": "sylenthmen",
+        "imgArt": "/sylenthmen_house.webp",
+        "gen": "House",
+        "fecha": "17-12-2021",
+        "lnk": "/smartlinks/Sir005/"
+    },
+    {
+        "artProfile": "/sylenthmen.jpg",
+        "trackNAme": "Lack Of Love",
+        "nameArt": "sylenthmen",
+        "imgArt": "/sylenthmen_lackoflove.jpg",
+        "gen": "Big Room",
+        "fecha": "15-10-2021",
+        "lnk": "/smartlinks/Sir004/"
+    },
+    {
+        "artProfile": "/sylenthmen.jpg",
+        "trackNAme": "19-10",
+        "nameArt": "sylenthmen",
+        "imgArt": "/sylenthmen_1910.jpg",
+        "gen": "Big Room",
+        "fecha": "13-09-2021",
+        "lnk": "/smartlinks/Sir003/"
+    },
+    {
+        "artProfile": "/sylenthmen.jpg",
+        "trackNAme": "Empy Heart",
+        "nameArt": "sylenthmen",
+        "imgArt": "/sylenthmen_emptyheart.jpg",
+        "gen": "Big Room",
+        "fecha": "17-07-2021",
+        "lnk": "/smartlinks/Sir002/"
+    },
+    {
+        "artProfile": "/sylenthmen.jpg",
+        "trackNAme": "Speed House",
+        "nameArt": "sylenthmen",
+        "imgArt": "/sylenthmen_speedhouse.jpg",
+        "gen": "House",
+        "fecha": "24-08-2017",
+        "lnk": "/smartlinks/Sir001/"
+    }
+]
+}
