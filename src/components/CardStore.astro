@@ -12,6 +12,13 @@
         font-family: "Kdam Thmor Pro", sans-serif;
       }
 
+      .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+
       .tarjetitas {
         display: flex;
         flex-wrap: wrap;
@@ -199,66 +206,74 @@
         .card {
           margin: 20px 0;
         }
+        .contenedor {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+        }
       }
     </style>
   </head>
   <body>
     <!-- Tarjeta 1 -->
-    <div class="tarjetitas">
-      <article class="card">
-        <div>
-          <img src="/galaxyx.webp" alt="Galaxy x cover art" />
-        </div>
-        <div class="botoncito">
-          <a
-            class="fancy"
-            href="https://buy.stripe.com/test_fZe3elaRBbMieY0fYZ"
-          >
-            <span class="top-key"></span>
-            <span class="text">Buy Track</span>
-            <span class="bottom-key-1"></span>
-            <span class="bottom-key-2"></span>
-          </a>
-        </div>
-      </article>
-    </div>
-    <!-- Tarjeta 2 -->
-    <div class="tarjetitas">
-      <article class="card">
-        <div>
-          <img src="/psynow.webp" alt="psynow cover art" />
-        </div>
-        <div class="botoncito">
-          <a
-            class="fancy"
-            href="https://buy.stripe.com/test_00g4ip5xh2bI17a6oo"
-          >
-            <span class="top-key"></span>
-            <span class="text">Buy Track</span>
-            <span class="bottom-key-1"></span>
-            <span class="bottom-key-2"></span>
-          </a>
-        </div>
-      </article>
-    </div>
+    <div class="contenedor">
+      <div class="tarjetitas">
+        <article class="card">
+          <div>
+            <img src="/galaxyx.webp" alt="Galaxy x cover art" />
+          </div>
+          <div class="botoncito">
+            <a
+              class="fancy"
+              href="https://buy.stripe.com/test_fZe3elaRBbMieY0fYZ"
+            >
+              <span class="top-key"></span>
+              <span class="text">Buy Track</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+            </a>
+          </div>
+        </article>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="tarjetitas">
+        <article class="card">
+          <div>
+            <img src="/psynow.webp" alt="psynow cover art" />
+          </div>
+          <div class="botoncito">
+            <a
+              class="fancy"
+              href="https://buy.stripe.com/test_00g4ip5xh2bI17a6oo"
+            >
+              <span class="top-key"></span>
+              <span class="text">Buy Track</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+            </a>
+          </div>
+        </article>
+      </div>
 
-    <!-- Tarjeta 3 -->
-    <div class="tarjetitas">
-      <article class="card">
-        <div>
-          <img src="/sylenthmen_1910.jpg" alt="1910 cover art" />
-        </div>
-        <div class="botoncito">
-          <a class="fancy" href="#">
-            <span class="top-key"></span>
-            <span class="text">Buy Track</span>
-            <span class="bottom-key-1"></span>
-            <span class="bottom-key-2"></span>
-          </a>
-        </div>
-      </article>
+      <!-- Tarjeta 3 -->
+      <div class="tarjetitas">
+        <article class="card">
+          <div>
+            <img src="/sylenthmen_1910.jpg" alt="1910 cover art" />
+          </div>
+          <div class="botoncito">
+            <a class="fancy" href="#">
+              <span class="top-key"></span>
+              <span class="text">Buy Track</span>
+              <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+            </a>
+          </div>
+        </article>
+      </div>
     </div>
-
     <!-- Puedes agregar más tarjetas según sea necesario -->
   </body>
 </html>
