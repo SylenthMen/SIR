@@ -1,0 +1,36 @@
+---
+import Smrt from "../../components/Smrt.astro";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sylenthmen - 19-10</title>
+    <ViewTransitions />
+    <style>
+      body {
+        background-color: #000000;
+        background-image: radial-gradient(
+            at 47% 33%,
+            hsl(336.55, 88%, 45%) 0,
+            transparent 59%
+          ),
+          radial-gradient(at 82% 65%, hsl(291.43, 0%, 0%) 0, transparent 55%);
+      }
+    </style>
+  </head>
+  <body>
+    <Smrt
+      transition:name="fotico"
+      ArtTrack="/sylenthmen_1910.jpg"
+      applelink="https://music.apple.com/us/album/19-10-extended-version/1582380083?i=1582380084"
+      spotifylink="https://open.spotify.com/intl-es/album/0LtmYTYmYLRyDKnDMij2RJ"
+      deezerlink="https://www.deezer.com/es/track/1473038832"
+      youtubelink="https://youtu.be/QtqzSwEzLgY?si=TZfxl4EsyZC_-Whl"
+      amazonlink="https://music.amazon.com.mx/albums/B09DBY31TM?marketplaceId=ART4WZ8MWBX2Y&musicTerritory=MX&ref=dm_sh_3kLT1U3AkaOe3b4fiVd3N2Gz4&trackAsin=B09DBVYV3Z"
+    />
+  </body>
+</html>

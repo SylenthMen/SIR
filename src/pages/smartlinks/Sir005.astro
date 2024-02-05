@@ -1,0 +1,36 @@
+---
+import Smrt from "../../components/Smrt.astro";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sylenthmen - House..?</title>
+    <ViewTransitions />
+    <style>
+      body {
+        background-color: #000000;
+        background-image: radial-gradient(
+            at 47% 33%,
+            hsl(27.79, 100%, 27%) 0,
+            transparent 59%
+          ),
+          radial-gradient(at 82% 65%, hsl(291.43, 0%, 0%) 0, transparent 55%);
+      }
+    </style>
+  </head>
+  <body>
+    <Smrt
+      transition:name="fotico"
+      ArtTrack="/sylenthmen_house.webp"
+      applelink="https://music.apple.com/us/album/house/1598895956?i=1598895959"
+      spotifylink="https://open.spotify.com/intl-es/album/66JzQRPV79fUjn007zne8y"
+      deezerlink="https://www.deezer.com/es/track/1580233562"
+      youtubelink="https://music.youtube.com/watch?v=Z3sxQ8P9vcE"
+      amazonlink="https://music.amazon.com.mx/albums/B09N3VXNQR?marketplaceId=ART4WZ8MWBX2Y&musicTerritory=MX&ref=dm_sh_WtVPO9DOzf7ZSSV0dimwCsI3x"
+    />
+  </body>
+</html>

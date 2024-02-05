@@ -1,5 +1,6 @@
 ---
 import { Tracks } from "../data/dataCi.json";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -14,6 +15,7 @@ import { Tracks } from "../data/dataCi.json";
       rel="stylesheet"
     />
     <title>CARDS</title>
+    <ViewTransitions />
     <style>
       body {
         background: #000;
@@ -140,7 +142,7 @@ import { Tracks } from "../data/dataCi.json";
     </style>
   </head>
   <body>
-    <div class="contento">
+    <div transition:name="fotico" class="contento">
       {
         Tracks.map(
           ({ artProfile, trackNAme, nameArt, imgArt, gen, fecha, lnk }) => {

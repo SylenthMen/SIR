@@ -1,0 +1,36 @@
+---
+import Smrt from "../../components/Smrt.astro";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sylenthmen - Galaxy X</title>
+    <ViewTransitions />
+    <style>
+      body {
+        background-color: #000000;
+        background-image: radial-gradient(
+            at 47% 33%,
+            hsl(191.04, 77%, 40%) 0,
+            transparent 59%
+          ),
+          radial-gradient(at 82% 65%, hsl(290.91, 89%, 22%) 0, transparent 55%);
+      }
+    </style>
+  </head>
+  <body>
+    <Smrt
+      transition:name="fotico"
+      ArtTrack="/galaxyx.webp"
+      applelink="https://music.apple.com/mx/album/galaxy-x-single/1724466931"
+      spotifylink="https://open.spotify.com/intl-es/track/3S4pAEvelxxB2a5gukyIBy?si=aee2ac05f6b74c8d"
+      deezerlink="https://deezer.page.link/khBRfbThZfT6WrV5A"
+      youtubelink="https://youtu.be/znhWgselsK0?si=Z1N-1A4cKRNhpRA0"
+      amazonlink="https://music.amazon.com.mx/albums/B0CRLGBMK3?marketplaceId=ART4WZ8MWBX2Y&musicTerritory=MX&ref=dm_sh_fX2JUcn5rQnszu4Vr6oor5mN5"
+    />
+  </body>
+</html>

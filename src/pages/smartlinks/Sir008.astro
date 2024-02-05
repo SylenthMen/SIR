@@ -1,0 +1,37 @@
+---
+import Smrt from "../../components/Smrt.astro";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sylenthmen - Smash Heart</title>
+    <ViewTransitions />
+    <style>
+      body {
+        background-repeat: no-repeat;
+        background-color: #000;
+        background-image: radial-gradient(
+            at 47% 33%,
+            hsl(358.56, 90%, 36%) 0,
+            transparent 59%
+          ),
+          radial-gradient(at 82% 65%, hsl(210, 11%, 4%) 0, transparent 55%);
+      }
+    </style>
+  </head>
+  <body>
+    <Smrt
+      transition:name="fotico"
+      ArtTrack="/smash_heart.webp"
+      applelink="https://music.apple.com/mx/album/smash-heart-single/1726684906"
+      spotifylink="https://open.spotify.com/intl-es/album/1ZkmHxvqgHNTbVyHTFnmTx?si=GJ5KleDURh-2B59sQofyuw"
+      deezerlink="https://deezer.page.link/ebmtDY5ZFU6Se5FS9"
+      youtubelink="https://youtu.be/NeEIxFPW4rQ?si=yn6YGFkK_G-ZUned"
+      amazonlink="https://music.amazon.com.mx/albums/B0CST3JYBL?marketplaceId=ART4WZ8MWBX2Y&musicTerritory=MX&ref=dm_sh_R9d7vo7oojO06pMgWuXuQQ3IJ"
+    />
+  </body>
+</html>

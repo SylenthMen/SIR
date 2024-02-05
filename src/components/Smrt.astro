@@ -1,0 +1,189 @@
+---
+import { ViewTransitions } from "astro:transitions";
+const { ArtTrack } = Astro.props;
+const { applelink } = Astro.props;
+const { spotifylink } = Astro.props;
+const { deezerlink } = Astro.props;
+const { youtubelink } = Astro.props;
+const { amazonlink } = Astro.props;
+---
+
+<ViewTransitions />
+<div class="contenedor">
+  <div class="card">
+    <div class="imagen">
+      <img transition:name="fotico" src={ArtTrack} alt="fotico" />
+    </div>
+
+    <div>
+      <ul transition:animate="slide" class="enlaces">
+        <a target="_blank" href={applelink}
+          ><li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-apple"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z"
+              ></path><path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2"></path></svg
+            >Apple Music
+          </li></a
+        >
+
+        <a target="_blank" href={spotifylink}
+          ><li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-spotify"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path
+                d="M8 11.973c2.5 -1.473 5.5 -.973 7.5 .527"></path><path
+                d="M9 15c1.5 -1 4 -1 5 .5"></path><path d="M7 9c2 -1 6 -2 10 .5"
+              ></path></svg
+            >Spotify
+          </li>
+        </a>
+        <a target="_blank" href={deezerlink}>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-deezer"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M3 16.5h2v.5h-2z"></path><path d="M8 16.5h2.5v.5h-2.5z"
+              ></path><path d="M16 17h-2.5v-.5h2.5z"></path><path
+                d="M21.5 17h-2.5v-.5h2.5z"></path><path
+                d="M21.5 13h-2.5v.5h2.5z"></path><path
+                d="M21.5 9.5h-2.5v.5h2.5z"></path><path d="M21.5 6h-2.5v.5h2.5z"
+              ></path><path d="M16 13h-2.5v.5h2.5z"></path><path
+                d="M8 13.5h2.5v-.5h-2.5z"></path><path d="M8 9.5h2.5v.5h-2.5z"
+              ></path></svg
+            >Deezer
+          </li>
+        </a>
+        <a target="_blank" href={youtubelink}>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-youtube"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"
+              ></path><path d="M10 9l5 3l-5 3z"></path></svg
+            >Youtube
+          </li>
+        </a>
+        <a target="_blank" href={amazonlink}>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-amazon"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                d="M17 12.5a15.198 15.198 0 0 1 -7.37 1.44a14.62 14.62 0 0 1 -6.63 -2.94"
+              ></path><path
+                d="M19.5 15c.907 -1.411 1.451 -3.323 1.5 -5c-1.197 -.773 -2.577 -.935 -4 -1"
+              ></path></svg
+            >Amazon Music
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  .contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    max-width: 700px;
+  }
+  .imagen img {
+    max-width: 250px;
+  }
+  .enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .enlaces li {
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    padding: 4px;
+    margin-left: 25px;
+    border-bottom: 2px solid #fff;
+  }
+
+  .enlaces li:hover {
+    scale: 1.1;
+    color: #ff9f33;
+    cursor: pointer;
+    border-bottom: 2px solid #ff9f33;
+  }
+
+  .card {
+    display: flex;
+    padding: 40px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+
+  @media screen and (max-width: 768px) {
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+</style>

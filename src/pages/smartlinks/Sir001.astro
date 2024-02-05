@@ -1,0 +1,36 @@
+---
+import Smrt from "../../components/Smrt.astro";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sylenthmen - Spped House</title>
+    <ViewTransitions />
+    <style>
+      body {
+        background-color: #000000;
+        background-image: radial-gradient(
+            at 47% 33%,
+            hsl(19.9, 100%, 39%) 0,
+            transparent 59%
+          ),
+          radial-gradient(at 82% 65%, hsl(291.43, 0%, 0%) 0, transparent 55%);
+      }
+    </style>
+  </head>
+  <body>
+    <Smrt
+      transition:name="fotico"
+      ArtTrack="/sylenthmen_speedhouse.jpg"
+      applelink="https://music.apple.com/mx/album/speed-house/1591442919?i=1591442925"
+      spotifylink="https://open.spotify.com/intl-es/album/0gRYFbK3mjnSfUhg9tL8GS"
+      deezerlink="https://www.deezer.com/es/track/1528637712"
+      youtubelink="https://www.youtube.com/watch?v=ChwLyYGfPEc&ab_channel=SkullIslandRecords"
+      amazonlink="https://music.amazon.com.mx/albums/B09JWY3QD9?marketplaceId=ART4WZ8MWBX2Y&musicTerritory=MX&ref=dm_sh_M79FrA5ZD94NRHUUnfV1mW7vS"
+    />
+  </body>
+</html>
