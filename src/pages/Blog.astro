@@ -3,7 +3,6 @@ import BlogHeader from "../components/BlogHeader.astro";
 import CardsEblog from "../components/CardsEblog.astro";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
-import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -12,9 +11,8 @@ import { ViewTransitions } from "astro:transitions";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog | Skull Island Records</title>
-    <ViewTransitions />
   </head>
-  <body class="bg-black">
+  <body class="bg-black animate-fade-in-down">
     <Navbar />
     <BlogHeader
       heroDesc="Hola mundo, este es un espacio diseñado para publicar artículos relacionados con el sello y posiblemente otro tipo de noticias, todos los miembros de Skull Island Records agradecen su visita y estadía en el sitio."

@@ -2,7 +2,6 @@
 import CardArtist from "../components/CardArtist.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
-import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -11,7 +10,7 @@ import { ViewTransitions } from "astro:transitions";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artists | Skull Island Records</title>
-    <ViewTransitions />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 
@@ -21,7 +20,7 @@ import { ViewTransitions } from "astro:transitions";
     </style></head
   >
 
-  <body class="bg-black">
+  <body class="bg-black animate-fade-in-down">
     <div class="z-10">
       <Navbar />
     </div>

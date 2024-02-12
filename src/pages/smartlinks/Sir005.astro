@@ -1,6 +1,5 @@
 ---
 import Smrt from "../../components/Smrt.astro";
-import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -9,7 +8,7 @@ import { ViewTransitions } from "astro:transitions";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sylenthmen - House..?</title>
-    <ViewTransitions />
+
     <style>
       body {
         background-color: #000000;
@@ -22,7 +21,7 @@ import { ViewTransitions } from "astro:transitions";
       }
     </style>
   </head>
-  <body>
+  <body class="animate-fade-in">
     <Smrt
       transition:name="fotico"
       ArtTrack="/sylenthmen_house.webp"

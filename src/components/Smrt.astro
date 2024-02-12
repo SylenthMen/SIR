@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from "astro:transitions";
 const { ArtTrack } = Astro.props;
 const { applelink } = Astro.props;
 const { spotifylink } = Astro.props;
@@ -8,15 +7,14 @@ const { youtubelink } = Astro.props;
 const { amazonlink } = Astro.props;
 ---
 
-<ViewTransitions />
 <div class="contenedor">
   <div class="card">
-    <div class="imagen">
-      <img transition:name="fotico" src={ArtTrack} alt="fotico" />
+    <div class="imagen animate-heartbeat">
+      <img src={ArtTrack} alt="fotico" />
     </div>
 
     <div>
-      <ul transition:animate="slide" class="enlaces">
+      <ul class="enlaces animate-fade-in-left">
         <a target="_blank" href={applelink}
           ><li>
             <svg
