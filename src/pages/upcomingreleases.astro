@@ -15,6 +15,10 @@ import Footer from "../components/Footer.astro";
       href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
       rel="stylesheet"
     />
+    <meta
+      name="description"
+      content="Seccion donde encontraras los proximos lanzamientos de skull island records."
+    />
     <title>Upcoming Releases</title>
 
     <style>
@@ -33,12 +37,12 @@ import Footer from "../components/Footer.astro";
       <UpcomiCard
         State="EN REVISION"
         Titulo="Smash Heart"
-        DescripcionUno="Track estilo Big Room."
-        DescripcionDos="Dinamico con ritmos explosivos acordes agresivos y bajos potentesn proto disponible en todas las tiendas de streaming."
+        DescripcionUno="Track estilo House."
+        DescripcionDos="Tranquilo echo con sentimiento, recordando buenos tiempos y con gran ritmo."
       >
         <img
           slot="COVER-ART"
-          src="/smash_heart.webp"
+          src="/lustex-luna.webp"
           alt="Cover art fo track release"
           class="w-full h-full object-cover"
           style="aspect-ratio: 1/1; object-fit: cover"
@@ -48,24 +52,17 @@ import Footer from "../components/Footer.astro";
           class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full"
           ><span
             class="flex h-full w-full items-center justify-center rounded-full bg-muted"
-            ><img
-              src="/sylenthmen.jpg"
-              alt="sylenthmen imagen de perfil"
-            /></span
+            ><img src="/lustex.jpg" alt="lustex imagen de perfil" /></span
           ></span
         >
         <a
           slot="LinkArtist"
           class="text-[#ff9f33] hover:underline"
           href="#"
-          rel="ugc">sylenthmen</a
+          rel="ugc">lustex</a
         >
         <!--BOTON VER VIDEO -->
-        <a
-          slot="btn-Adelanto"
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.tiktok.com/@skullislandrecords/video/7310444967816711430?is_from_webapp=1&sender_device=pc&web_id=7285412557015139846"
+        <a slot="btn-Adelanto" target="_blank" rel="noreferrer" href="#"
           ><button
             class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2
           bg-[#ff9f33] hover:bg-orange-800 text-white"
@@ -90,8 +87,8 @@ import Footer from "../components/Footer.astro";
 
         <button
           slot="EstadoT"
-          class="p-1 inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-green-900/35 hover:bg-green-600/55 text-green-600"
-          >Aprovado</button
+          class="p-1 inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-red-900/35 hover:bg-red-900 text-red-600"
+          >En revision</button
         >
       </UpcomiCard>
       <!--FIN DE PRIMER CARD -->
