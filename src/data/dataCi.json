@@ -1,6 +1,15 @@
 {
     "Tracks": [
         {
+            "artProfile": "/lustex.jpg",
+            "trackNAme": "Luna",
+            "nameArt": "Lustex",
+            "imgArt": "/lunalustex.webp",
+            "gen": "Electro House",
+            "fecha": "03-04-2024",
+            "lnk": "/smartlinks/Sir009/"
+        },
+        {
         "artProfile": "/sylenthmen.jpg",
         "trackNAme": "Smash Heart",
         "nameArt": "sylenthmen",
