@@ -1,0 +1,35 @@
+---
+import Smrt from "../../components/Smrt.astro";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sylenthmen - Smash Heart</title>
+
+    <style>
+      body {
+        background-color: #000000;
+        background-image: radial-gradient(
+            at 47% 33%,
+            hsl(162, 77%, 40%) 0,
+            transparent 59%
+          ),
+          radial-gradient(at 82% 65%, hsl(218.01, 100%, 44%) 0, transparent 55%);
+      }
+    </style>
+  </head>
+  <body class="animate-fade-in">
+    <Smrt
+      transition:name="fotico"
+      ArtTrack="/lunalustex.webp"
+      applelink="https://music.apple.com/gb/album/luna/1739635897?i=1739635899"
+      spotifylink="#"
+      deezerlink="https://www.deezer.com/es/album/569143381"
+      youtubelink="https://www.youtube.com/watch?v=y-Yzp_XIcXE"
+      amazonlink="https://amazon.com/music/player/albums/B0CZV1Z7SP?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_DshB9NgMshVUcdhpAYTNBlJWQ"
+    />
+  </body>
+</html>
