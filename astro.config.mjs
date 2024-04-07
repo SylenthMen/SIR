@@ -7,8 +7,8 @@ import svelte from "@astrojs/svelte";
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
-  adapters: vercel({
-    webAnalytics: { enabled: true}
+  adapter: vercel({
+    webAnalytics: { enabled: true }
   }),
   integrations: [tailwind(), svelte()]
 });
