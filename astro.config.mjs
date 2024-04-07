@@ -1,14 +1,13 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-import vercel from '@astrojs/vercel/serverless';
+import vercelStatic from '@astrojs/vercel/static';
+
 
 import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
-  adapter: vercel({
-    webAnalytics: { enabled: true }
-  }),
+  output: 'static',
+  adapters: vercelStatic(),
   integrations: [tailwind(), svelte()]
 });
