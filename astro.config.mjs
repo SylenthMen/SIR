@@ -8,6 +8,8 @@ import svelte from "@astrojs/svelte";
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
-  adapters: vercelStatic(),
+  adapters: vercelStatic({
+    webAmalytics: { enabled: true}
+  }),
   integrations: [tailwind(), svelte()]
 });
