@@ -9,7 +9,10 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
   output: 'static',
   adapters: vercelStatic({
-    webAmalytics: { enabled: true}
+    webAnalytics: {
+      enabled: true,
+    },
+    maxDuration: 8,
   }),
   integrations: [tailwind(), svelte()]
 });
